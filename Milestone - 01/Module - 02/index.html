@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Home | HTML Form and Semantics
+        </title>
+        <!---favicon-->
+        <link rel="shortcut icon" href="html5-icon.png" type="image/x-icon">
+    </head>
+    <body>
+        <nav id="navbar">
+            <ul>
+                <li>Home</li>
+            </ul>
+        </nav>
+        <h3>My fav anime list</h3>
+
+        <div id="anime-list">
+            <ul>
+                <li>JJBA</li>
+                <li>AOT</li>
+                <li>JJK</li>
+                <li>DN</li>
+            </ul>
+            <button type="button">Already watched</button>
+        </div>
+        <br>
+        <br>
+
+        <!--Use "section" when content has meaning.--->
+        <!---Use "div" when it’s just a container.-->
+
+<!--form-->
+<div id="info-form">
+    <form action="http://www.google.com"> <!---submits this form to google-->
+        <fieldset> <!---to create diff groups-->
+            <legend>Personal Info</legend><br> <!---to give that group a title-->
+
+            <label for="first-name">First Name</label><br>
+            <input required type="text" placeholder="Jonathan"><br><br>
+
+            <label for="middle-name">Middle Name(optional)</label><br>
+            <input type="text" placeholder="Brando"><br><br>
+
+
+            <label for="last-name">Last Name</label><br>
+            <input required type="text" placeholder="Joestar"><br><br>
+
+            <label for="email-address">Email</label><br>
+            <input required type="email"  placeholder="xyz@gmail.com"><br><br>
+
+            <label for="age">Age</label><br>
+            <input required type="number"  placeholder="18"><br><br>
+
+            <label for="birthdate">Birthdate</label><br>
+            <input required type="date"><br><br>
+
+            <label for="password">Password</label><br>
+            <input required type="password" autocomplete><br><br>
+
+            <label for="gender">Gender</label><br><br>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">female<br><br>
+
+            <label for="game">Select a game</label><br>
+          <select name="game selection" id="game-select">
+                <option value="football">Football</option>
+                <option value="cricket">Cricket</option>
+                <option value="tennis">Tennis</option>
+          </select><br><br>
+
+          <label for="file-uploading">upload file</label><br>
+          <input type="file" required>
+          <br><br>
+
+            <textarea name="textarea" id="feedback-area" rows="10" cols="20">
+                Enter your feedback
+            </textarea>
+
+        </fieldset>
+        <br><br>
+<button type="submit">submit</button><!---submit button is must-->
+    </form><br><br>
+
+<iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23671.76133439751!2d88.9351370622829!3d24.797580147396353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc635794009f4d%3A0xb51cd38c889c1bc1!2sNaogaon%20District%20Stadium!5e0!3m2!1sen!2sbd!4v1772482001825!5m2!1sen!2sbd" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div><br><br><br>
+
+<article id="table" align="center">
+<table border="1">
+   <thead>
+    <tr >
+        <td>
+            Jonathan Joestar
+        </td>
+        <td>
+            Joseph Joestar
+        </td>
+        <td>
+            Jotaro Kujo
+        </td>
+    </tr>
+   </thead>
+   <tbody>
+     <tr>
+        <td>
+            Goerge Joestar<br>
+            Giorno Giovanna
+        </td>
+        <td>
+            Holy Joestar<br>
+            Josuke Higashikata
+        </td>
+        <td>
+            Jolyne Kujo
+        </td>
+    </tr>
+   </tbody>
+   <tfoot>
+    <tr>
+        <td colspan="3">
+            JoJo
+        </td>
+    </tr>
+   </tfoot>
+</table>
+</article>
+
+<br><br><br>
+
+<section>
+    <address>
+        Dhanmondi 32,Dhaka
+    </address>
+</section>
+
+    </body>
+</html>
