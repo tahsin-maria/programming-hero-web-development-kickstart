@@ -1,0 +1,87 @@
+body{
+    background-color: #f2f2e8;
+}
+
+div {
+    margin-top:130px;  
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #ec7089;
+    border-radius: 16px;
+    text-align: center;
+
+    width: 300px;
+    height: 500px;
+    background-color: #f2f2e8;
+}
+
+#img-section {
+    padding-top: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+#pookie-img {
+    height: 200px;
+    width: 280px;
+    border-radius: 16px;
+}
+
+#buttons2 {
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 19px;
+}
+
+#btn1,
+#btn2 {
+    color: #ec7089;
+    border-radius: 15px;
+    border-color: #ec7089;
+    font-weight: bolder;
+    cursor: pointer;
+
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#btn2 {
+    margin-left: 14px;
+}
+
+#text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    background-color: #f89cae;
+    color: #f2f2e8;
+    font-size: 18px;
+    text-align: left;
+
+    width: 280px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-radius: 14px;
+}
+
+p {
+    padding-left: 14px;
+    padding-right: 10px;
+
+}
+
+h3 {
+    font-size: 32px;
+    padding-left: 14px;
+    padding-top: 22px;
+    text-decoration: underline;
+}
