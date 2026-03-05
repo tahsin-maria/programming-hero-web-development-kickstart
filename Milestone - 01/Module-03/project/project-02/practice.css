@@ -1,0 +1,81 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*main*/
+.container {
+  background: #49c7c9;
+  background: linear-gradient(
+    0deg,
+    rgba(73, 199, 201, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*card*/
+.card {
+  width: 850px;
+  height: 450px;
+  background-color: rgb(154, 226, 176);
+
+  display: flex;
+
+  font-family:Comic Sans MS, Comic Sans, cursive;
+}
+
+/*first box*/
+.textbox {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 40px;
+  padding:40px;
+}
+
+.textbox h1{
+color:rgb(198, 145, 101);
+}
+
+.textbox #para{
+    text-align: justify;
+    color:rgb(10, 10, 10);
+}
+
+.textbox .data{
+    text-align: center;
+    width:100%;
+    height:100%;
+    color:hsl(180, 4%, 18%);
+    
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    padding:10px;
+}
+
+h3{
+    color:rgb(172, 148, 69);
+}
+
+/*image*/
+.bgimg {
+  background-image: url("leaves.jpg");
+  background-size: cover;
+  background-position: center;
+
+  width: 50%;
+  height: 100%;
+}
