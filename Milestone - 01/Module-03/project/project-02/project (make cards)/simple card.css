@@ -1,0 +1,73 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+
+    background: #eeaeca;
+    background: radial-gradient(circle,
+            rgba(238, 174, 202, 1) 0%,
+            rgba(148, 187, 233, 1) 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 360px;
+    height: 500px;
+    background-color: rgb(228, 205, 167);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 15px;
+
+    font-family:
+        "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+        Arial, sans-serif;
+}
+
+.card img {
+    height: 48%;
+    border-radius: 20px;
+}
+
+.card h2 {
+    font-size: 23px;
+    color: rgb(224, 141, 39);
+
+    border-bottom: 3px solid rgba(239, 180, 70, 0.795);
+}
+
+.card p {
+    font-size: 17px;
+}
+
+.card button {
+    border: 3px solid rgb(231, 170, 101);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+
+    background-color: rgb(240, 159, 59);
+    color: rgb(232, 221, 221);
+    cursor: pointer;
+
+    /*smooth hover effect*/
+    transition: 0.3s;
+
+}
+
+/*glowy hover effect*/
+button:hover {
+    box-shadow: 0px 0px 10px rgb(247, 168, 20);
+}

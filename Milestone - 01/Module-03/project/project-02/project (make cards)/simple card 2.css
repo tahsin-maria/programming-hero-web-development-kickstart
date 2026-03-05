@@ -1,0 +1,117 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+
+    background: #eeaeca;
+    background: radial-gradient(circle,
+            rgba(238, 174, 202, 1) 0%,
+            rgba(148, 187, 233, 1) 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 345px;
+    height: 550px;
+    background-color: rgb(238, 234, 227);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap:20px;
+    
+
+    font-family:
+        "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+        Arial, sans-serif;
+}
+
+.card img{
+    width:100%;
+    height:30%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.textbox{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:13px;
+    width:80%;
+    text-align: center;
+}
+
+.textbox p{
+    font-size: 15px;
+    color:rgb(79, 64, 64)
+}
+
+
+.amountbox{
+    width:90%;
+    height:10%;
+    background-color: rgb(67, 196, 196);
+    border-radius: 15px;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 8px;
+}
+
+.card button{
+    color:rgb(12, 163, 189);
+    font-size:14px;
+    font-style: bold;
+    background-color: rgb(255, 255, 255);
+    
+    width:90%;
+    height:8%;
+    cursor:pointer;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}   
+
+.cancel a{
+    text-decoration: none;
+    color:rgb(98, 98, 30);
+}
+
+.amountbox .leftbox{
+    width:fit-content;
+    height:100%;
+    display:flex;
+    gap:10px;
+    align-items: center;
+}
+
+.amountbox .leftbox img{
+    width:40px;
+    height:45px;
+}
+
+.amountbox .leftbox p{
+    font-size: 14px;
+    color:rgb(255, 255, 255)
+}
+
+.amountbox .leftbox .secondp{
+    color:rgb(65, 62, 62)
+}
+
+.amountbox .rightbox a{
+    color:rgb(255, 255, 255)
+}
