@@ -1,0 +1,226 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: bisque;
+}
+
+/*pseudo-class*/
+/* .title:hover{
+    color:chartreuse;
+}
+.inp:focus{
+color:darkred;
+} */
+
+/*position*/
+.container {
+  border: 2px solid red;
+  height: 900px;
+  margin: auto;
+
+  /*must have a position property -> for absolute->otherwise it will move according to body*/
+
+  position: relative;
+}
+
+.box {
+  height: 100px;
+  width: 150px;
+  background-color: greenyellow;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.style-1 {
+  background-color: blueviolet;
+
+  position: relative;
+  /*relative*/
+  top: 50px;
+  left: 50px;
+  /* right:30px; */
+  /* bottom:50px; */
+}
+
+.style-2 {
+  position: absolute;
+  /*absolute*/
+  top: 0px;
+
+  background-color: aqua;
+  z-index: 3;
+  /*konta upore thakbe*/
+}
+
+.style-3 {
+  background-color: darkmagenta;
+
+  position: fixed;
+  /*fixed*/
+  top: 0px;
+  left: 330px;
+  z-index: 8;
+}
+
+.style-4 {
+  background-color: lightcoral;
+
+  position: sticky;
+  left: 590;
+  top: 50px;
+
+  z-index: 4;
+}
+
+/*transform*/
+.tr {
+  margin: auto;
+  border: 2px solid black;
+  width: 80vw;
+  height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+  /*hides overflow*/
+}
+
+.b {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(17, 242, 73);
+  border: 2px solid red;
+}
+
+.b1 {
+  /*fixes position*/
+  transform: translate(100px, 40px);
+  /*left , top*/
+}
+
+.b2 {
+  /* transform:scale(1.5); default value 1 , streches size x times */
+
+  /* transform:scaleX(2); */
+  transform: scaleY(1.5);
+}
+
+/* .b2:hover{       /*scales when we hover over it
+    transform:scaleY(1.5);
+    transition:1s;
+} */
+
+.b3 {
+  transform: rotate(120deg);
+}
+
+/* .b3:hover{ 
+    transform:rotate(120deg);
+    transition:1s;
+    /*rotates only when we hover over it
+} */
+
+/*transition & animation*/
+.c3 {
+  margin: auto;
+  border: 2px solid black;
+  width: 80vw;
+  height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.b3:hover {
+  transform: scaleX(2);
+
+  /* 
+    transition-duration:1s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-delay:200ms;  
+    */
+
+  /*shorthand form -> property , duration , timing-func , delay */
+  transition: all 1s ease-in-out 200ms;
+}
+
+/*animation*/
+.c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* @keyframes anime {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.5);
+    background-color: blue;
+    color:rgb(255, 30, 0);
+  }
+} */
+/*another way*/
+/* @keyframes anime {
+  0% {
+    transform: scale(1);
+  }
+25% {
+    background-color: rgb(170, 255, 0);
+  }
+  50% {
+    background-color: rgb(242, 255, 4);
+  }
+  75% {
+    background-color: rgb(255, 140, 0);
+  }
+  100% {
+    background-color: rgb(255, 2, 2);
+    transform: scale(2);
+  }
+} */
+
+.animation-box {
+  height: 200px;
+  width: 200px;
+  background-color: chartreuse;
+
+  /* animation-name:anime;
+  animation-duration: 3s;
+  animation-delay: 200ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  ->keeps animation in the last state , doesn't go back to normal */
+
+  animation: anime 2s linear 100ms infinite backwards;
+}
+
+/*grid*/
+.cont {
+  width: 800px;
+  height: 500px;
+  border:2px solid black;
+
+  display: grid;
+  /* grid-template-columns: 150px 150px auto 150px ; */
+  grid-template-columns: repeat(3,100px); /* equally distribute = auto = 1fr*/
+  /* grid-template-rows: 100px 100px ; */
+  gap:20px;
+  /* justify-content: center;
+  align-items: center; */
+  place-content: center; /*exact center*/
+}
+.g {
+  height: 60px;
+  background-color: chartreuse;
+  border: 2px solid red;
+}
