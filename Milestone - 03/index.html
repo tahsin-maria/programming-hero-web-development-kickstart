@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Mood Changer</title>
+</head>
+<body class="flex flex-col items-center gap-5 pt-10 bg-[#a6f0b2] mb-5">
+    <div class="text-4xl font-mono font-extrabold text-[#ffffff] [text-shadow:2px_2px_4px_#aeaeef] max-lg:text-[21px]">
+        <h1 id="curr-mood">Current Mood: Normal😎</h1>
+    </div>
+    <div class="text-2xl bg-[#fbc7c7] border-2 flex flex-row gap-12 font-mono rounded-[10px] max-lg:flex-col max-lg:w-[60%] max-lg:gap-0 max-lg:text-[17px]" >
+    <button type="button" id="happy" class="bg-[#fefeaa]  p-2 m-2 border-2 rounded-[10px] transition " >Happy</button>
+    <button  type="button" id="sad" class="bg-[#d4ebfc] border-2 rounded-[10px] p-2 m-2">Sad</button>
+    <button type="button" id="angry" class="bg-[#ef7878] border-2 rounded-[10px] p-2 m-2">Angry</button>
+    <button type="button" id="reset" class="bg-[#a6f0b2]  p-2 m-2 border-2 rounded-[10px] " >Reset</button>
+    </div>
+    <script src="shortprojectscript.js"></script>
+</body>
+</html>
