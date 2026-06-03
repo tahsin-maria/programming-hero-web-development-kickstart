@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Cat Website</title>
+    <style>
+        .highlight{
+            background-color:black;
+        }
+        .hidden{
+            display:hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">HELLO WORLD</h1>
+
+    <p class="para">para 1</p>
+    <p class="para">para 2</p>
+    <p class="para">para 3</p>
+
+    <p id="item2">Lorem, ipsum dolor.</p>
+    <div id="content">
+<p>P TAG</p>
+<p>P TAG</p>
+<p>P TAG</p>
+    </div>
+
+    <div id="box" >A DIV</div>
+
+    <div class="ml-16 flex gap-2 w-[25%]">
+        <button type="button" class="flex-1 border-2 p-2" onclick="changeStyle()">Change Style</button>
+    <button type="button" class="flex-1 border-2  p-2" onclick="removeStyle()">remove style</button>
+    <button type="button" class="flex-1 border-2  p-2" onclick="toggleStyle()">toggle style</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
