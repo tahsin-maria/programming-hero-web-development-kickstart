@@ -17,23 +17,23 @@ const para = document.querySelectorAll(".para"); //selects all //can run forEach
 console.log(para);
 
 para.forEach(p => {
-//   console.log(p.innerText);
-// });
+  console.log(p.innerText);
+});
 
-// const para2 = document.getElementsByClassName("para"); //gets all classes //can't run forEach loop
-// console.log(para2);
+const para2 = document.getElementsByClassName("para"); //gets all classes //can't run forEach loop
+console.log(para2);
 
 // for get single element use -> getElementById,querySelector()
 
 //for multiple elements use -> getElementsByClassName , querySelectorAll()
 
-// let text = document.getElementById("item2");
-// text.innerText = "hello";
-// console.log(text);
+let text = document.getElementById("item2");
+text.innerText = "hello";
+console.log(text);
 
-// let contentDiv = document.getElementById('content');
-// contentDiv.innerHTML='<button>Click</button>'
-// contentDiv.innerHTML='<b><p>HELLO</p></b>'
+let contentDiv = document.getElementById('content');
+contentDiv.innerHTML='<button>Click</button>'
+contentDiv.innerHTML='<b><p>HELLO</p></b>'
 //js overpowers html tag !!!
 
 
